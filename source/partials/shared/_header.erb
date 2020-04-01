@@ -1,0 +1,16 @@
+<header class="site-header">
+
+  <h1 class="site-header__title">
+    Matthew John Bocchi
+  </h1>
+
+  <nav class="site-header__navigation">
+    <ul class="site-header__navigation-link-list">
+      <% data.settings.navigation.nav_items.each do | nav_item | %>
+        <li class="site-header__navigation-link">
+          <%= link_to nav_item.label nav_item.path  %>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+</header>

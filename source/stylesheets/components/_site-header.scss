@@ -1,0 +1,25 @@
+.site-header {
+  align-items: center;
+  background-color: $clean-smoke;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $space-4;
+}
+
+.site-header__title {
+  font-size: 2rem;
+}
+
+.site-header__navigation {
+  display: flex;
+}
+
+.site-header__navigation-link-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.site-header__navigation-link {
+  display: block;
+  margin-left: $space-3;
+}

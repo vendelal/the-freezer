@@ -1,28 +1,18 @@
 //setup
 @charset 'utf-8';
 
-//bootstrap stuff
-@import 'demo/base/variables';
-@import 'demo/base/mixins';
-@import 'demo/base/normalize';
-@import 'demo/base/scaffolding';
-@import 'demo/base/type';
+@import "settings/variables.scss";
+@import "settings/fonts.scss";
 
-@import 'demo/base/colors';
-@import 'demo/base/typography';
-@import 'demo/base/grid';
-@import 'demo/base/placeholders';
+@import "tools/breakpoints-mixin.scss";
 
-@import 'demo/shared/header-primary';
-@import 'demo/shared/main-content';
-@import 'demo/shared/footer';
+@import "generic/normalize.css";
+@import "generic/layout.scss";
 
-@import 'demo/products/products';
-@import 'demo/products/product';
-@import 'demo/products/product-detail';
+@import "elements/type-elements.scss";
 
-@import 'demo/news/news';
-@import 'demo/news/news-detail';
-
-@import 'demo/homepage/hero';
-@import 'demo/homepage/story';
+// @import "objects/*";
+//
+@import "components/site-header";
+//
+// @import "trumps/*";
