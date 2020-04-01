@@ -50,6 +50,14 @@ collections:
               - {label: Image, name: image, widget: image}
               - {label: Bio, name: bio, widget: markdown}
 
+      - file: "data/pages/contact.yml"
+        label: Contact
+        name: contact
+        fields:
+          - label: Title
+            name: title
+            widget: string
+
   - name: settings
     label: Settings
     files:
