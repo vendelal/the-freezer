@@ -4,7 +4,7 @@
     <%= partial "layouts/meta" %>
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag "https://identity.netlify.com/v1/netlify-identity-widget.js" %>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
     <%= partial "partials/shared/header" %>
@@ -12,6 +12,5 @@
       <%= yield %>
     </main>
     <%= partial "partials/shared/footer" %>
-    <%= javascript_include_tag "vanilla-tilt.js" %>
   </body>
 </html>
