@@ -1,6 +1,9 @@
 hero:
-  image: /images/uploads/homepage-hero.jpg
-  title: Matthew John Bocchi Author and Speaker
+  backgroundimage: /images/uploads/hero-background.jpg
+  centerimage: /images/uploads/book-cover.png
+  rightimage: /images/uploads/cloud1.png
+  leftimage: /images/uploads/cloud3.png
+  topleftimage: /images/uploads/cloud2.png
 story: >-
   Kaldi is the coffee store for everyone who believes that great coffee
   shouldn't just taste good, it should do good too. We source all of our beans

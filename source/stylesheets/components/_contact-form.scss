@@ -1,0 +1,17 @@
+.contact-form {
+  margin: $space-2;
+  max-width: $reading-width;
+  padding: $space-5 $space-1;
+
+  @include breakpoint("medium") {
+    margin: 0 auto;
+  }
+
+  input {
+    margin-bottom: $space-4;
+  }
+}
+
+.contact-form__submit-button {
+  margin-top: $space-5;
+}

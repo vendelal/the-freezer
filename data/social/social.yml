@@ -1,0 +1,5 @@
+social_media:
+  - {path: 'https://www.instagram.com/mattyboch/', icon: /images/social/instagram.svg}
+  - {path: 'https://www.twitter.com', icon: /images/social/twitter.svg}
+  - {path: 'https://www.facebook.com', icon: /images/social/facebook.svg}
+  - {path: 'https://www.youtube.com', icon: /images/social/youtube.svg}

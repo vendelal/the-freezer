@@ -3,8 +3,44 @@ title: Matthew John Bocchi
 ---
 
 
-<section style="background-image: url(<%= data.pages.home.hero.image %>)">
+<section class="hero" style="background-image: url(<%= data.pages.home.hero.backgroundimage %>)">
 
-  <h1><%= data.pages.home.hero.title %></h1>
+  <img
+    data-tilt
+    data-tilt-glare="true"
+    data-tilt-full-page-listening
+    data-tilt-reset="true"
+    class="hero__center-image"
+    src="<%= data.pages.home.hero.centerimage %>"
+  />
+
+  <img
+    data-tilt
+    data-tilt-full-page-listening
+    class="hero__topleft-image"
+    src="<%= data.pages.home.hero.topleftimage %>"
+  />
+
+  <img
+    data-tilt
+    data-tilt-full-page-listening
+    data-tilt-reverse="true"
+    class="hero__right-image"
+    src="<%= data.pages.home.hero.rightimage %>"
+  />
+
+  <img
+    data-tilt
+    data-tilt-full-page-listening
+    data-tilt-reverse="true"
+    class="hero__left-image"
+    src="<%= data.pages.home.hero.leftimage %>"
+  />
 
 </section>
+
+<%= link_to(
+  data.settings.site.action_button.button_text,
+  data.settings.site.action_button.path,
+  class: "hero__action-button"
+) %>

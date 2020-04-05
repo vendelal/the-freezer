@@ -3,21 +3,24 @@ title: Contact Matthew John Bocchi
 ---
 
 
-<header>
-  <h1>
-    <%= data.pages.contact.title %>
-  </h1>
-</header>
+<section class="contact-form">
+  <header>
+    <h1>
+      <%= data.pages.contact.title %>
+    </h1>
+  </header>
 
-<form netlify method="POST" name="contact">
-  <label for="name">Name</label>
-  <input name="name" id="name" type="text" autocomplete="name"/>
+  <form netlify method="POST" name="contact" action="/success">
+    <label for="name">Name</label>
+    <input name="name" id="name" type="text" autocomplete="name"/>
 
-  <label for="email">Email</label>
-  <input name="email" id="email" type="email" autocomplete="email">
+    <label for="email">Email</label>
+    <input name="email" id="email" type="email" autocomplete="email">
 
-  <label for="message">Message</label>
-  <textarea name="message" id="message" rows="5"></textarea>
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows="5"></textarea>
 
-  <button type="submit">Submit</button>
-</form>
+    <button class="button contact-form__submit-button" type="submit">Submit</button>
+  </form>
+
+</section>

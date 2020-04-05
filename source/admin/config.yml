@@ -32,8 +32,11 @@ collections:
             name: hero
             widget: object
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Image, name: image, widget: image}
+              - {label: BackgroundImage, name: backgroundimage, widget: image}
+              - {label: CenterImage, name: centerimage, widget: image}
+              - {label: RightImage, name: rightimage, widget: image}
+              - {label: LeftImage, name: leftimage, widget: image}
+              - {label: TopLeftImage, name: topleftimage, widget: image}
           - label: Story
             name: story
             widget: markdown
@@ -48,7 +51,9 @@ collections:
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Image, name: image, widget: image}
-              - {label: Bio, name: bio, widget: markdown}
+          - label: Bio
+            name: bio
+            widget: markdown
 
       - file: "data/pages/contact.yml"
         label: Contact
@@ -71,3 +76,30 @@ collections:
             fields:
               - {label: Label, name: label, widget: string}
               - {label: Path, name: path, widget: string}
+      - file: data/settings/site.yml
+        label: Site
+        name: site
+        fields:
+          - label: Site Title
+            name: site_title
+            widget: string
+          - label: Action Button
+            name: action_button
+            widget: object
+            fields:
+              - {label: Button Text, name: button_text, widget: string}
+              - {label: Path, name: path, widget: string}
+
+  - name: social
+    label: Social Media
+    files:
+      - file: data/social/social.yml
+        label: Social Media
+        name: social
+        fields:
+          - label: Social Media
+            name: social_media
+            widget: list
+            fields:
+              - {label: Path, name: path, widget: string}
+              - {label: Icon, name: icon, widget: image}

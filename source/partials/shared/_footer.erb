@@ -4,4 +4,13 @@
     Copyright © 2020
   </p>
 
+  <ul class="footer__social-links-list">
+    <% data.social.social.social_media.each do | social_media | %>
+      <li class="footer__social-links-list-item">
+        <% link_to social_media.path, class: "footer__social-link" do  %>
+          <%= image_tag(social_media.icon) %>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
 </footer>

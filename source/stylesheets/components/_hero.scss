@@ -1,0 +1,74 @@
+.hero {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.hero__center-image {
+  display: block;
+  height: 55vh;
+  margin: 0 auto;
+  padding: $space-3;
+
+  @include breakpoint("medium") {
+    padding-top: 5rem;
+    height: 70vh;
+  }
+}
+
+.hero__topleft-image {
+  display: none;
+
+  @include breakpoint("medium") {
+    width: 75%;
+    left: -20%;
+    position: absolute;
+    top: 0;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+  }
+}
+
+.hero__right-image {
+  display: none;
+
+  @include breakpoint("medium") {
+    bottom: 0;
+    position: absolute;
+    right: -10%;
+    width: 55%;
+  }
+}
+
+.hero__left-image {
+  display: none;
+
+  @include breakpoint("medium") {
+    bottom: 0;
+    width: 65%;
+    position: absolute;
+    left: -10%;
+  }
+}
+
+.hero__action-button {
+  background-color: transparent;
+  border: $button-border;
+  padding: $space-1 $space-3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 200px;
+  margin: 0 auto;
+  width: max-content;
+  z-index: 999;
+
+  &:hover {
+    background-color: $onyx;
+    color: $white;
+    transition: all $base-duration;
+  }
+}

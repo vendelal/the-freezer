@@ -1,3 +1,15 @@
 [build]
   command = "bundle exec middleman build --verbose"
   publish = "build/"
+
+# [[redirects]]
+#   from = "https://matthew-john-bocchi.netlify.app/*"
+#   to = "https://www.domain.com/:splat"
+#   status = 301
+#   force = true
+
+# [[redirects]]
+#   from = "https://matthew-john-bocchi.netlify.com/*"
+#   to = "https://www.domain.com/:splat"
+#   status = 301
+#   force = true

@@ -2,13 +2,21 @@
 title: About Matthew John Bocchi
 ---
 
+<article class="bio">
+  <div
+    class="bio__author-photo"
+    style="background-image: url(<%= data.pages.about.image %>)">
+  </div>
 
-<header>
-  <h1>
-    <%= data.pages.about.title %>
-  </h1>
-</header>
+  <div class="bio__text">
+    <header>
+      <h1>
+        <%= data.pages.about.title %>
+      </h1>
+    </header>
 
-<p>
-  <%= data.pages.about.bio %>
-</p>
+    <p>
+      <%= data.pages.about.bio %>
+    </p>
+  </div>
+</article>

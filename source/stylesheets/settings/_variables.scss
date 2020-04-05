@@ -1,5 +1,10 @@
 // Colors
-$clean-smoke: #EFEFEF;
+$white: #FFFFFF;
+$quartz: #EEEEEE;
+$smoke: #9A9A9A;
+$basalt: rgba(0, 0, 0, 0.8);
+$onyx: rgb(0, 0, 0);
+$sky: rgb(84, 137, 184);
 
 // Spacing
 $space-1: 0.5em;
@@ -15,3 +20,22 @@ $breakpoints: (
   medium: 55em,
   large: 88em
 );
+
+// Animations
+$base-duration: 500ms;
+
+// Borders
+$dividing-border: 1px solid $quartz;
+$button-border: 2px solid $onyx;
+
+// Widths
+$reading-width: 70ch;
+
+// Typography
+$letter-spacing-wide: 0.2rem;
+$line-height-body: 1.5rem;
+$font-family-header: 'TradeGothic', sans-serif;
+$font-family-button: 'TradeGothic', sans-serif;
+$font-family-body: 'Libre Baskerville', serif;
+$font-size-body: 1rem;
+$font-size-header: 1.5rem;

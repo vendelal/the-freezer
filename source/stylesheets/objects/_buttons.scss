@@ -1,0 +1,31 @@
+button,
+.button {
+  appearance: none;
+  background-color: $onyx;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-family-button;
+  font-size: 1rem;
+  letter-spacing: $letter-spacing-wide;
+  line-height: 1;
+  padding: $space-2 $space-4;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: $sky;
+    transition: background-color $base-duration;
+  }
+}

@@ -1,0 +1,13 @@
+$__form-element-border: 1px solid $smoke;
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  border: $__form-element-border;
+  padding: $space-2;
+  font-family: $font-family-body;
+  font-size: $font-size-body;
+}

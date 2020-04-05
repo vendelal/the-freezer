@@ -1,0 +1,4 @@
+site_title: "Matthew John Bocchi"
+action_button:
+  button_text: "Pre-order"
+  path: "/books"
