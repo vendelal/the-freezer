@@ -1,4 +1,5 @@
 site_title: "Matthew John Bocchi"
 action_button:
   button_text: "Pre-order"
-  path: "/books"
+  path: "https://www.amazon.com/dp/1642936405/ref=cm_sw_su_dp"
+thank_you_icon: /images/thank-you.svg

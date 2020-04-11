@@ -23,6 +23,7 @@
   display: none;
 
   @include breakpoint("medium") {
+    display: block;
     width: 75%;
     left: -20%;
     position: absolute;
@@ -36,6 +37,7 @@
   display: none;
 
   @include breakpoint("medium") {
+    display: block;
     bottom: 0;
     position: absolute;
     right: -10%;
@@ -47,6 +49,7 @@
   display: none;
 
   @include breakpoint("medium") {
+    display: block;
     bottom: 0;
     width: 65%;
     position: absolute;
@@ -61,14 +64,20 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 200px;
+  bottom: 115px;
   margin: 0 auto;
-  width: max-content;
+  text-align: center;
+  width: 50%;
   z-index: 999;
 
   &:hover {
     background-color: $onyx;
     color: $white;
     transition: all $base-duration;
+  }
+
+  @include breakpoint("medium") {
+    bottom: 175px;
+    width: 20%;
   }
 }

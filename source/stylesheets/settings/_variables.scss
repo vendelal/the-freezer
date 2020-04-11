@@ -1,10 +1,13 @@
 // Colors
 $white: #FFFFFF;
+$transparent-white: rgba(255, 255, 255, 0.7);
 $quartz: #EEEEEE;
 $smoke: #9A9A9A;
 $basalt: rgba(0, 0, 0, 0.8);
 $onyx: rgb(0, 0, 0);
 $sky: rgb(84, 137, 184);
+$rainy-sky: #708291;
+$blue-cotton: rgba(157, 176, 184, 0.2);
 
 // Spacing
 $space-1: 0.5em;
@@ -12,6 +15,7 @@ $space-2: 1em;
 $space-3: 1.5em;
 $space-4: 2em;
 $space-5: 3em;
+$space-6: 5em;
 
 // Breakpoints
 $breakpoints: (

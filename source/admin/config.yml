@@ -89,6 +89,9 @@ collections:
             fields:
               - {label: Button Text, name: button_text, widget: string}
               - {label: Path, name: path, widget: string}
+          - label: Thank You Icon
+            name: thank_you_icon
+            widget: image
 
   - name: social
     label: Social Media

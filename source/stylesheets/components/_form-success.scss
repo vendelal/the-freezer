@@ -1,0 +1,16 @@
+$__icon-size: 5rem;
+$__title-line-height: 2.2rem;
+
+.form-success {
+  padding: $space-6 $space-2;
+  text-align: center;
+}
+
+.form-success__title {
+  line-height: $__title-line-height;
+}
+
+.form-success__icon {
+  margin-bottom: $space-3;
+  width: $__icon-size;
+}
