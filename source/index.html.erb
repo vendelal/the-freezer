@@ -1,46 +1,19 @@
 ---
-title: Matthew John Bocchi
+title: The Freezer
 ---
 
 
-<section class="hero" style="background-image: url(<%= data.pages.home.hero.backgroundimage %>)">
+<section class="inventory">
 
-  <img
-    data-tilt
-    data-tilt-glare="true"
-    data-tilt-full-page-listening
-    data-tilt-reset="true"
-    class="hero__center-image"
-    src="<%= data.pages.home.hero.centerimage %>"
-  />
-
-  <img
-    data-tilt
-    data-tilt-full-page-listening
-    class="hero__topleft-image"
-    src="<%= data.pages.home.hero.topleftimage %>"
-  />
-
-  <img
-    data-tilt
-    data-tilt-full-page-listening
-    data-tilt-reverse="true"
-    class="hero__right-image"
-    src="<%= data.pages.home.hero.rightimage %>"
-  />
-
-  <img
-    data-tilt
-    data-tilt-full-page-listening
-    data-tilt-reverse="true"
-    class="hero__left-image"
-    src="<%= data.pages.home.hero.leftimage %>"
-  />
+  <ul>
+    <% data.pages.home.inventory.each do | inventory_item | %>
+      <li class="site-header__navigation-link">
+        <%= inventory_item.label %>
+        <%= inventory_item.source %>
+        <%= inventory_item.amount %>
+        <img src="<%=inventory_item.image %>" />
+      </li>
+    <% end %>
+  </ul>
 
 </section>
-
-<%= link_to(
-  data.settings.site.action_button.button_text,
-  data.settings.site.action_button.path,
-  class: "hero__action-button"
-) %>

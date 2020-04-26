@@ -1,14 +1,3 @@
 <header class="site-header">
-
   <%= link_to data.settings.site.site_title, '/', class: "site-header__title" %>
-
-  <nav>
-    <ul class="site-header__navigation-link-list">
-      <% data.settings.navigation.nav_items.each do | nav_item | %>
-        <li class="site-header__navigation-link">
-          <%= link_to nav_item.label, nav_item.path  %>
-        </li>
-      <% end %>
-    </ul>
-  </nav>
 </header>

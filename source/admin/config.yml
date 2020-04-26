@@ -4,23 +4,7 @@ backend:
 media_folder: source/images/uploads
 public_folder: /images/uploads
 
-#publish_mode: editorial_workflow #optional, enables publishing workflow
-
 collections:
-  - name: blog
-    label: Blog
-    folder: source/posts/
-    extension: .html.md
-    format: frontmatter
-    create: true
-    slug: '{{title}}'
-    fields:
-      - {label: Title, name: title, widget: string, required: true}
-      - {label: Publish Date, name: date, widget: datetime}
-      - {label: Description, name: description, widget: string}
-      - {label: Image, name: image, widget: image}
-      - {label: Body, name: body, widget: markdown}
-
   - name: pages
     label: Pages
     files:
@@ -28,54 +12,18 @@ collections:
         label: Homepage
         name: home
         fields:
-          - label: Hero
-            name: hero
-            widget: object
+          - label: Inventory
+            name: inventory
+            widget: list
             fields:
-              - {label: BackgroundImage, name: backgroundimage, widget: image}
-              - {label: CenterImage, name: centerimage, widget: image}
-              - {label: RightImage, name: rightimage, widget: image}
-              - {label: LeftImage, name: leftimage, widget: image}
-              - {label: TopLeftImage, name: topleftimage, widget: image}
-          - label: Story
-            name: story
-            widget: markdown
-
-      - file: "data/pages/about.yml"
-        label: About
-        name: about
-        fields:
-          - label: Title
-            name: title
-            widget: object
-            fields:
-              - {label: Title, name: title, widget: string}
+              - {label: Name, name: name, widget: string}
+              - {label: Source, name: source, widget: string}
+              - {label: Amount, name: amount, widget: string}
               - {label: Image, name: image, widget: image}
-          - label: Bio
-            name: bio
-            widget: markdown
-
-      - file: "data/pages/contact.yml"
-        label: Contact
-        name: contact
-        fields:
-          - label: Title
-            name: title
-            widget: string
 
   - name: settings
     label: Settings
     files:
-      - file: data/settings/navigation.yml
-        label: Navigation
-        name: navigation
-        fields:
-          - label: Navigation
-            name: nav_items
-            widget: list
-            fields:
-              - {label: Label, name: label, widget: string}
-              - {label: Path, name: path, widget: string}
       - file: data/settings/site.yml
         label: Site
         name: site
@@ -83,26 +31,3 @@ collections:
           - label: Site Title
             name: site_title
             widget: string
-          - label: Action Button
-            name: action_button
-            widget: object
-            fields:
-              - {label: Button Text, name: button_text, widget: string}
-              - {label: Path, name: path, widget: string}
-          - label: Thank You Icon
-            name: thank_you_icon
-            widget: image
-
-  - name: social
-    label: Social Media
-    files:
-      - file: data/social/social.yml
-        label: Social Media
-        name: social
-        fields:
-          - label: Social Media
-            name: social_media
-            widget: list
-            fields:
-              - {label: Path, name: path, widget: string}
-              - {label: Icon, name: icon, widget: image}

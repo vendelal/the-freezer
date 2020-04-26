@@ -1,8 +1,0 @@
-section.homepage-news.news
-  .container
-    h2
-      | Media
-    .news-items
-      //get the first two most recent posts
-      - blog.articles.each do | article |
-        = partial 'partials/media/media_item', locals: {article: article}
