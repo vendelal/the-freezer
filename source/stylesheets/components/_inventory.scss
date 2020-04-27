@@ -1,0 +1,45 @@
+.inventory {
+  margin-top: $space-3;
+  padding: 0;
+}
+
+.inventory__item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.inventory__item-image {
+  width: 8rem;
+  margin-left: $space-3;
+}
+
+.inventory__details {
+  background-color: $white;
+  border-radius: $border-radius-base;
+  margin: $space-1 $space-2;
+  padding: $space-2;
+  width: 50%;
+}
+
+.inventory__item-name {
+  color: $neon-green;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.inventory__data-label {
+  color: $fern;
+  font-size: 0.75rem;
+  letter-spacing: $letter-spacing-wide;
+  text-transform: uppercase;
+}
+
+.inventory__data {
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

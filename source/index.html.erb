@@ -3,17 +3,38 @@ title: The Freezer
 ---
 
 
-<section class="inventory">
+<ul class="inventory">
+  <% data.pages.home.inventory.each do | inventory_item | %>
+    <li class="inventory__item">
 
-  <ul>
-    <% data.pages.home.inventory.each do | inventory_item | %>
-      <li class="site-header__navigation-link">
-        <%= inventory_item.label %>
-        <%= inventory_item.source %>
-        <%= inventory_item.amount %>
-        <img src="<%=inventory_item.image %>" />
-      </li>
-    <% end %>
-  </ul>
+      <%= image_tag(
+        inventory_item.image,
+        class: "inventory__item-image"
+      ) %>
 
-</section>
+      <div class="inventory__details">
+
+        <h2 class="inventory__item-name">
+          <%= inventory_item.label %>
+        </h2>
+
+        <label class="inventory__data-label">
+          Source
+        </label>
+
+        <p class="inventory__data">
+          <%= inventory_item.source %>
+        </p>
+
+        <label class="inventory__data-label">
+          Amount
+        </label>
+
+        <p class="inventory__data">
+          <%= inventory_item.amount %>
+        </p>
+
+      </div>
+    </li>
+  <% end %>
+</ul>

@@ -1,9 +1,10 @@
 button,
 .button {
   appearance: none;
-  background-color: $onyx;
+  background-color: $hunting-orange;
   border: 0;
-  color: $white;
+  border-radius: $border-radius-base;
+  color: $aged-paper;
   cursor: pointer;
   display: inline-block;
   -webkit-font-smoothing: antialiased;
@@ -25,7 +26,7 @@ button,
   }
 
   &:hover {
-    background-color: $sky;
+    background-color: darken($hunting-orange, 10%);
     transition: background-color $base-duration;
   }
 }

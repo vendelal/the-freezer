@@ -31,3 +31,6 @@ collections:
           - label: Site Title
             name: site_title
             widget: string
+          - label: Tag Line
+            name: tag_line
+            widget: string

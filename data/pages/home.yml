@@ -1,11 +1,11 @@
 inventory:
-  - {label: 'Pancetta', source: 'Fat Apple Farm', amount: "1 Cube", image: 'images/uploads/pancetta.jpg'}
-  - {label: 'Filet Mignon', source: 'Fat Apple Farm', amount: "4 Filets", image: 'images/uploads/filet-mignon.jpg'}
-  - {label: 'Slab Bacon', source: 'Fat Apple Farm', amount: "1/2 Slab", image: 'images/uploads/slab-bacon.jpg'}
-  - {label: 'Bacon', source: 'Fat Apple Farm', amount: "3 Packs", image: 'images/uploads/bacon.jpg'}
-  - {label: 'Formed Burgers', source: 'Fat Apple Farm', amount: "8 Patties", image: 'images/uploads/burgers.jpg'}
-  - {label: 'Ground Beef', source: 'Fat Apple Farm', amount: "3 Packages", image: 'images/uploads/ground-beef.jpg'}
-  - {label: 'Pork Chops', source: 'Fat Apple Farm', amount: "6", image: 'images/uploads/pork-chop.jpg'}
-  - {label: 'NY Strip Steak', source: 'Fat Apple Farm', amount: "1", image: 'images/uploads/ny-strip.jpg'}
-  - {label: 'Short Rib', source: 'Fat Apple Farm', amount: "1 pack of 3", image: 'images/uploads/short-rib.jpg'}
-  - {label: 'Bratwurst', source: 'Fat Apple Farm', amount: "4 Sausages", image: 'images/uploads/sausage-thick.jpg'}
+  - {label: 'Pancetta', source: 'Fat Apple Farm', amount: "1 Cube", image: 'images/uploads/pancetta.png'}
+  # - {label: 'Filet Mignon', source: 'Fat Apple Farm', amount: "4 Filets", image: 'images/uploads/filet-mignon.png'}
+  # - {label: 'Slab Bacon', source: 'Fat Apple Farm', amount: "1/2 Slab", image: 'images/uploads/slab-bacon.jpg'}
+  # - {label: 'Bacon', source: 'Fat Apple Farm', amount: "3 Packs", image: 'images/uploads/bacon.jpg'}
+  # - {label: 'Formed Burgers', source: 'Fat Apple Farm', amount: "8 Patties", image: 'images/uploads/burgers.png'}
+  # - {label: 'Ground Beef', source: 'Fat Apple Farm', amount: "3 Packages", image: 'images/uploads/ground-beef.png'}
+  - {label: 'Pork Chops', source: 'Fat Apple Farm', amount: "6", image: 'images/uploads/pork-chop.png'}
+  - {label: 'NY Strip Steak', source: 'Fat Apple Farm', amount: "1", image: 'images/uploads/ny-strip.png'}
+  - {label: 'Short Rib', source: 'Fat Apple Farm', amount: "1 pack of 3", image: 'images/uploads/short-rib.png'}
+  - {label: 'Bratwurst', source: 'Fat Apple Farm', amount: "4 Sausages", image: 'images/uploads/sausage-thick.png'}

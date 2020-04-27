@@ -1,5 +1,15 @@
 @font-face {
-  font-family: 'TradeGothic';
+  font-family: "CircularStd";
+  font-style: normal;
   font-weight: normal;
-  src: url('../fonts/Trade-Gothic-Condensed-18.woff') format('woff');
+  src: url("../../fonts/CircularStd-Book.eot");
+  src: local("☺"), url("../fonts/CircularStd-Book.woff") format("woff"), url("../fonts/CircularStd-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CircularStd";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/CircularStd-Bold.eot");
+  src: local("☺"), url("../fonts/CircularStd-Bold.woff") format("woff"), url("../fonts/CircularStd-Bold.ttf") format("truetype");
 }

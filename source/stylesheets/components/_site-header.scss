@@ -1,6 +1,5 @@
 .site-header {
-  background-color: $white;
-  border-bottom: $dividing-border;
+  background-color: darken($aged-paper, 5%);
   padding: $space-4 $space-4 0 $space-4;
   text-align: center;
 
@@ -13,24 +12,5 @@
 }
 
 .site-header__title {
-  color: $smoke;
-  font-size: 1.2rem;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-}
-
-.site-header__navigation-link-list {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.site-header__navigation-link {
-  display: block;
-  margin: 0 $space-1;
-
-  @include breakpoint("medium") {
-    margin-left: $space-3;
-  }
+  color: $forest-green;
 }
