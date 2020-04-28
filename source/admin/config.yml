@@ -5,21 +5,18 @@ media_folder: source/images/uploads
 public_folder: /images/uploads
 
 collections:
-  - name: pages
-    label: Pages
+  - name: freezer
+    label: Freezer
     files:
-      - file: "data/pages/home.yml"
-        label: Homepage
-        name: home
+      - file: "data/inventory.yml"
+        label: Freezer
+        name: inventory
+        widget: list
         fields:
-          - label: Inventory
-            name: inventory
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Source, name: source, widget: string}
-              - {label: Amount, name: amount, widget: string}
-              - {label: Image, name: image, widget: image}
+          - {label: Name, name: name, widget: string}
+          - {label: Source, name: source, widget: string}
+          - {label: Amount, name: amount, widget: string}
+          - {label: Image, name: image, widget: image}
 
   - name: settings
     label: Settings

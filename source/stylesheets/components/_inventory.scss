@@ -1,32 +1,54 @@
 .inventory {
-  margin-top: $space-3;
+  margin: 0;
   padding: 0;
-}
-
-.inventory__item {
-  align-items: center;
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
+  flex-direction: row-reverse;
+  width: 100vw;
+
+  @include breakpoint("medium") {
+    flex-direction: row;
+  }
 }
 
-.inventory__item-image {
-  width: 8rem;
-  margin-left: $space-3;
+.inventory__details-list {
+  width: 50%;
+
+  @include breakpoint("medium") {
+    background-color: $forest-green;
+    flex-shrink: 0;
+    height: calc(100vh - 88px);
+    overflow: scroll;
+    width: 300px;
+  }
 }
 
 .inventory__details {
   background-color: $white;
   border-radius: $border-radius-base;
-  margin: $space-1 $space-2;
-  padding: $space-2;
-  width: 50%;
+  height: 300px;
+  list-style-type: none;
+  margin: $space-1 $space-2 $space-1 0;
+  padding: $space-3 $space-2;
+  width: 100%;
+
+  @include breakpoint("medium") {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "title title"
+      "source amount"
+      "source amount";
+    height: auto;
+  }
 }
 
 .inventory__item-name {
   color: $neon-green;
   font-size: 1.2rem;
   margin-top: 0;
+  grid-area: title;
 }
 
 .inventory__data-label {
@@ -39,7 +61,66 @@
 .inventory__data {
   margin-top: 0;
 
+  @include breakpoint("medium") {
+    color: $aged-paper;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.inventory__source {
+  grid-area: source;
+}
+
+.inventory__amount {
+  grid-area: amount;
+}
+
+
+.inventory__images-list {
+  list-style-type: none;
+  width: 50%;
+
+  @include breakpoint("medium") {
+    flex-grow: 1;
+    columns: 3;
+  }
+
+  @include breakpoint("large") {
+    columns: 4;
+  }
+}
+
+.inventory__images-list-item {
+  height: 300px;
+
+  @include breakpoint("medium") {
+    height: auto;
+    position: relative;
+  }
+}
+
+.inventory__image {
+  width: 100%;
+
+  @include breakpoint("medium") {
+    height: auto;
+  }
+}
+
+.inventory__image-amount {
+  background-image: image-url("images/callout.svg");
+  color: $aged-paper;
+  display: block;
+  font-weight: bold;
+  height: 55px;
+  padding-top: $space-2;
+  position: absolute;
+  text-align: center;
+  white-space: wrap;
+  top: 0;
+  transform: rotate(-15deg);
+  width: 55px;
 }

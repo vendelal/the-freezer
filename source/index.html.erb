@@ -4,37 +4,52 @@ title: The Freezer
 
 
 <ul class="inventory">
-  <% data.pages.home.inventory.each do | inventory_item | %>
-    <li class="inventory__item">
-
-      <%= image_tag(
-        inventory_item.image,
-        class: "inventory__item-image"
-      ) %>
-
-      <div class="inventory__details">
+  <div class="inventory__details-list">
+    <% data.freezer.inventory.each do | inventory_item | %>
+      <li class="inventory__details">
 
         <h2 class="inventory__item-name">
           <%= inventory_item.label %>
         </h2>
 
-        <label class="inventory__data-label">
-          Source
-        </label>
+        <div class="inventory__source">
+          <label class="inventory__data-label">
+            Source
+          </label>
 
-        <p class="inventory__data">
-          <%= inventory_item.source %>
-        </p>
+          <p class="inventory__data">
+            <%= inventory_item.source %>
+          </p>
+        </div>
 
-        <label class="inventory__data-label">
-          Amount
-        </label>
+        <div class="inventory__amount">
+          <label class="inventory__data-label inventory__amount">
+            Amount
+          </label>
 
-        <p class="inventory__data">
+          <p class="inventory__data inventory__amount">
+            <%= inventory_item.amount %>
+          </p>
+        </div>
+
+      </li>
+    <% end %>
+  </div>
+
+  <div class="inventory__images-list">
+    <% data.freezer.inventory.each do | inventory_item | %>
+      <li class="inventory__images-list-item">
+
+        <%= image_tag(
+          inventory_item.image,
+          class: "inventory__image"
+        ) %>
+
+        <span class="inventory__image-amount">
           <%= inventory_item.amount %>
-        </p>
+        </span>
 
-      </div>
-    </li>
-  <% end %>
+      </li>
+    <% end %>
+  </div>
 </ul>
